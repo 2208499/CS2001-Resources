@@ -37,20 +37,29 @@
                            and how to create a button that would react to a click Event
                         -->
                     <!-- Example given for user type checkboxes-->
-                    <label for="Name">Name:</label><br>
-                    <input type="text" id="Name" name="Name" value=""><br>
-                    <label for="email">Email:</label><br>
-                    <input type="text" id="email" name="email" value=""><br>
-                    <label for="password">Password:</label><br>
-                    <input type="text" id="password" name="password" value=""><br>
+                    <label for="name">Name:</label>
+                    <input class="textInput" type="text" id="name" name="name" required maxlength="50"><br><br>
+                    
+                    <label for="email">Email:</label>
+                    <input class="textInput" type="text" id="email" name="email" required><br><br>
+
+                    <label for="password">Password:</label>
+                    <input class="textInput" type="text" id="password" name="password" required minlength="8"><br><br>
+
+                    <label for="retype-password">Retype-Password:</label>
+                    <input class="textInput" type="text" id="retype-password" name="retype-password" required minlength="8"><br><br>
 
                     <input type="checkbox" id="buyer" name="buyer" value="buyer">
                     <label for="buyer">I want to buy produce directly from allotment owners.</label><br>
                     <input type="checkbox" id="seller" name="seller" value="seller">
                     <label for="seller">I want to sell produce from my allotment.</label><br><br>
+                    
                     <input type="checkbox" id="tos" name="tos" value="tos">
-                    <label for="tos">I agree to the Terms of Use and Privacy Policy.</label><br><br>
-                    <input type="submit" value="Register"> <a href="https://www.w3schools.com/">Learn More</a>
+                    <label for="tos">I agree to the Terms of Use and Privacy Policy.</label>
+                    <br><br>
+
+                    <input type="button" id="button" value="Register" onclick="submitForm()">
+                    <a href="">Learn more</a>
 
                     <br><br>
                 </form>
